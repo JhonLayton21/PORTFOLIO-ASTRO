@@ -1,0 +1,25 @@
+---
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<div class="grid grid-cols-3 gap-4">
+    <div class="box col-span-2">PROGRAMADOR Y DESARROLLADOR WEB. ACTITUD Y CONOCIMIENTO.</div>
+    <div class="box">{title}</div>
+    <div class="box">{title}</div>
+    <div class="box">{title}</div>
+	<div class="box">{title}</div>
+</div>
+  
+<style>
+	.box{
+		background-color: #181431;
+		padding: 6px;
+		margin: 2px;
+		border-radius: 5px;
+	}
+	
+</style>
