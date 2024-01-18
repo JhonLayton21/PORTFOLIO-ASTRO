@@ -6,7 +6,6 @@ interface Props {
 
 const { title } = Astro.props;
 ---
-<SpeedInsights>
 <!doctype html>
 <html lang="es">
 	<head>
@@ -20,6 +19,7 @@ const { title } = Astro.props;
 	<body>
 		
 		<slot />
+		<SpeedInsights></SpeedInsights>
 	</body>
 </html>
 <style is:global>
