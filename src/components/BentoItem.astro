@@ -15,7 +15,7 @@ const { title } = Astro.props;
     col-span-10 rounded-xl
     `}
 >
-  <h2 class="p-3 text-center md:text-left">{title}</h2>
+  <h2 class="p-3 text-center md:text-left text-transparent bg-clip-text bg-gradient-to-r from-slate-100 to-indigo-700">{title}</h2>
   <slot name="content"></slot>
 </article>
 

@@ -7,17 +7,17 @@ import Avatar from "./icons/avatar.astro";
 <section 
     class={`
         grid grid-cols-10 gap-3 
-        auto-rows-max p-6
+        auto-rows-max p-6 min-w-[370px] max-w-full
     `}>
 
     <BentoItem class="md:col-span-6" title="DESARROLLADOR Y PROGRAMADOR."></BentoItem>
     
-    <BentoItem class="md:col-span-4 " title="INFORMACIÓN BÁSICA">
-      <div class="grid lg:grid-cols-2 p-5" slot="content">
+    <BentoItem class="md:col-span-4" title="INFORMACIÓN BÁSICA">
+      <div class="grid lg:grid-cols-2" slot="content">
           <div class="lg:order-2 flex flex-col justify-center items-center">
               <Avatar /> 
           </div>
-          <div class="lg:order-1 text-center lg:text-left lg:pr-5 flex flex-col justify-center ">
+          <div class="lg:order-1 text-center lg:text-left items-center w-full p-5">
               <p>Jhon Brandon Layton Rodriguez</p>
               <p>20 años</p>
               <p>Programador front end</p>
