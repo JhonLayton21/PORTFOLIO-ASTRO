@@ -1,41 +1,99 @@
 ---
 import BentoItem from "./BentoItem.astro";
 import Avatar from "./icons/avatar.astro";
-
-
+import List from "./common/List.astro";
+import Experience from "./common/Experience.astro";
 ---
-<section 
-    class={`
+
+<section
+  class={`
         grid grid-cols-10 gap-3 
         auto-rows-max p-6 min-w-[370px] max-w-full
-    `}>
-
-    <BentoItem class="md:col-span-6" title="DESARROLLADOR Y PROGRAMADOR."></BentoItem>
-    
-    <BentoItem class="md:col-span-4" title="INFORMACIÓN BÁSICA">
-      <div class="grid lg:grid-cols-2" slot="content">
-          <div class="lg:order-2 flex flex-col justify-center items-center">
-              <Avatar /> 
-          </div>
-          <div class="lg:order-1 text-center lg:text-left items-center w-full p-5">
-              <p>Jhon Brandon Layton Rodriguez</p>
-              <p>20 años</p>
-              <p>Programador front end</p>
-              <p>Tecnologia en desarrollo de software</p>
-              <p>Bogotá, Colombia</p>
-          </div>
-      </div>
+    `}
+>
+  <BentoItem
+    class="md:col-span-6 flex flex-col justify-between"
+    title="DESARROLLADOR Y PROGRAMADOR 🪄"
+  >
+    <List
+      slot="content"
+      text="👨🏾‍🎓 Actualmente estoy estudiando tecnología en desarrollo de software en Universitaria Uniagustiniana. Bogotá, Colombia 🇨🇴"
+    />
+    <List
+      slot="content"
+      text="💻 Estoy desarrollando mi proyecto de grado, que es un sistema de control de inventario de productos, ventas, clientes, proveedores e informes para una empresa de sillas"
+    />
+    <List
+      slot="content"
+      text="👜 Trabajo de manera independiente en proyectos como páginas de aterrizaje, imágenes y videos publicitarios"
+    />
+    <List
+      slot="content"
+      text="👨 Soy un chico apasionado con pasatiempos como los videojuegos, la música, el diseño gráfico y los deportes"
+    />
+    <List
+      slot="content"
+      text="🌱 Actualmente estoy aprendiendo Git, React y Astro"
+    />
+    <List
+      slot="content"
+      text="⚡ Proactivo, amigable, trabajador, curioso, comprometido"
+    />
   </BentoItem>
 
-    <BentoItem class="md:col-span-5" title="PROYECTOS"></BentoItem>
-    <BentoItem class="md:col-span-5" title="EXPERIENCIA"></BentoItem>
-    <BentoItem class="md:col-span-7" title="TECNOLOGÍAS"></BentoItem>
-    <BentoItem class="md:col-span-3" title="CERTIFICADOS"></BentoItem>
+  <BentoItem class="md:col-span-4" title="INFORMACIÓN BÁSICA 👨‍💻">
+    <div class="grid lg:grid-cols-2" slot="content">
+      <div class="lg:order-2 flex flex-col justify-center items-center">
+        <Avatar />
+      </div>
+      <div class="lg:order-1 text-center lg:text-left items-center w-full p-5">
+        <List slot="content" text="Jhon Brandon Layton Rodriguez" />
+        <List slot="content" text="21 años" />
+        <List slot="content" text="Programador Junior Full Stack" />
+        <List slot="content" text="Tecnólogo en desarrollo de software" />
+        <List slot="content" text="Bogotá, Colombia" />
+      </div>
+    </div>
+  </BentoItem>
 
+  <BentoItem class="md:col-span-2" title="EDUCACIÓN 🎓">
+    <div slot="content" class="p-4">
+      <h2 class="!text-2xl !font-bold">Tecnología en desarrollo de software</h2>
+      <h3 class="!font-light">Universitaria Uniagustiniana</h3>
+      <button
+        class="rounded-full my-2 bg-indigo-200 text-indigo-700 p-2 cursor-none"
+        >2021-2024</button
+      >
+    </div>
+  </BentoItem>
+
+  <BentoItem class="md:col-span-2" title="REFERENCIA PROFESIONAL 👔">
+    <div slot="content" class="p-4">
+      <h2 class="!text-2xl !font-bold mb-2">ING. Mauricio Alonso Villalba</h2>
+      <p class="!font-light mb-2 !text-lg">
+        Director de proyectos TIC y Carreras en Ingeniería y tecnología en
+        Desarrollo de Software en la Uniagustiniana
+      </p>
+      <p class="!font-light mb-2 !text-lg">+57 300 431 7643</p>
+    </div>
+  </BentoItem>
+
+  <BentoItem class="md:col-span-6" title="CERTIFICADOS 📝" />
+
+  <BentoItem class="md:col-span-10" title="EXPERIENCIA 📋">
+    <Experience slot="content" title="Aplicación web para gestión de inventario" date="Julio-Noviembre 2024." link="https://proofimaster.vercel.app/" subtitle="Empresa PROOFISILLAS LTDA" text="Creación y desarrollo aplicación web para empresa distribuidora de sillas, con módulos para productos, ventas, clientes, proveedores, con caracteristicas adicionales como historial de cambios, generación de informes, etc. Usando métodología RAD acompañada de tecnologias como React, Tailwind, Postgresql, Supabase, Vercel, Git"></Experience>
+    <Experience slot="content" title="Landing Page" date="Diciembre 2023-Enero 2024." link="https://rodriguezsas.com.co/" subtitle="Empresa RODRIGUEZ SAS" text="Creación, desarrollo e implementación página web tipo Landing Page para empresa dedicada construcción y mantenimientos usando tecnologias como PHP, MySQL, Bootstrap, JavaScript"></Experience>
+    <Experience slot="content" title="Landing Page" date="Noviembre 2023." link="https://microlanit.com.co/" subtitle="Empresa MICROLAN IT SAS" text="Creación, desarrollo e implementación página web tipo Landing page para empresa de ingenieria en hardware, software y comunicaciones, usando tecnologias como HTML, CSS, JAVASCRIPT"></Experience>
+  </BentoItem>
+  <BentoItem class="md:col-span-5" title="TECNOLOGÍAS 🖥️" />
+  <BentoItem class="md:col-span-5" title="CONTACTO 📞" />
 </section>
 
 <style>
-  p {
+  p,
+  h2,
+  h3,
+  button {
     font-family:
       "Outfit Variable",
       system-ui,
@@ -49,9 +107,13 @@ import Avatar from "./icons/avatar.astro";
       "Open Sans",
       "Helvetica Neue",
       sans-serif;
-      font-weight: 400;
-      padding-bottom: 10px;
-      font-size: 1.4rem;
   }
-
+  p,
+  h2,
+  h3 {
+    font-weight: 400;
+    padding-bottom: 10px;
+    font-size: 1.4rem;
+  }
 </style>
+
