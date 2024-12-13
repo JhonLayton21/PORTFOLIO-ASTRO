@@ -3,6 +3,7 @@ import BentoItem from "./BentoItem.astro";
 import Avatar from "./icons/avatar.astro";
 import List from "./common/List.astro";
 import Experience from "./common/Experience.astro";
+import SocialMedia from "./common/SocialMedia.astro";
 ---
 
 <section
@@ -81,12 +82,20 @@ import Experience from "./common/Experience.astro";
   <BentoItem class="md:col-span-6" title="CERTIFICADOS 📝" />
 
   <BentoItem class="md:col-span-10" title="EXPERIENCIA 📋">
+    <Experience slot="content" title="Landing Page" date="Diciembre 2024." link="https://lilipets.vercel.app/" subtitle="LA NANA LILI P.ETS" text="Creación, desarrollo e implementación página web tipo Landing Page para una guardería de mascotas usand como tecnologias Astro, tailwind, vercel, git"></Experience>
     <Experience slot="content" title="Aplicación web para gestión de inventario" date="Julio-Noviembre 2024." link="https://proofimaster.vercel.app/" subtitle="Empresa PROOFISILLAS LTDA" text="Creación y desarrollo aplicación web para empresa distribuidora de sillas, con módulos para productos, ventas, clientes, proveedores, con caracteristicas adicionales como historial de cambios, generación de informes, etc. Usando métodología RAD acompañada de tecnologias como React, Tailwind, Postgresql, Supabase, Vercel, Git"></Experience>
     <Experience slot="content" title="Landing Page" date="Diciembre 2023-Enero 2024." link="https://rodriguezsas.com.co/" subtitle="Empresa RODRIGUEZ SAS" text="Creación, desarrollo e implementación página web tipo Landing Page para empresa dedicada construcción y mantenimientos usando tecnologias como PHP, MySQL, Bootstrap, JavaScript"></Experience>
     <Experience slot="content" title="Landing Page" date="Noviembre 2023." link="https://microlanit.com.co/" subtitle="Empresa MICROLAN IT SAS" text="Creación, desarrollo e implementación página web tipo Landing page para empresa de ingenieria en hardware, software y comunicaciones, usando tecnologias como HTML, CSS, JAVASCRIPT"></Experience>
   </BentoItem>
+
   <BentoItem class="md:col-span-5" title="TECNOLOGÍAS 🖥️" />
-  <BentoItem class="md:col-span-5" title="CONTACTO 📞" />
+  
+  <BentoItem class="md:col-span-5" title="CONTACTO 📞">
+    <SocialMedia slot="content" link="mailto:laytonjhon0@gmail.com" text="laytonjhon0@gmail.com" logo="gmail.svg"></SocialMedia>
+    <SocialMedia slot="content" link="https://github.com/JhonLayton21" text="JhonLayton21" logo="github.svg"></SocialMedia>
+    <SocialMedia slot="content" link="https://www.linkedin.com/in/jhon-layton/" text="Jhon Brandon Layton" logo="linkedin.svg"></SocialMedia>
+    <SocialMedia slot="content" link="https://wa.me/573192993229" text="+57 319 299 3229" logo="whatsapp.svg"></SocialMedia>
+  </BentoItem>
 </section>
 
 <style>
