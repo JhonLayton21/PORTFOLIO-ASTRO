@@ -5,7 +5,7 @@ const { title, subtitle, text, date, link } = Astro.props;
 <div class="m-4 grid grid-cols-12 pb-5 relative">
   <div class="col-span-6">
     <h2 class="!text-xl !font-bold mb-2">{title}</h2>
-    <a href={link} target="_blank">{link}</a>
+    <a href={link} target="_blank" class="break-words">{link}</a>
     <p>{date}</p>
   </div>
   <div class="col-span-6">

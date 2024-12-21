@@ -4,6 +4,22 @@ import Avatar from "./icons/avatar.astro";
 import List from "./common/List.astro";
 import Experience from "./common/Experience.astro";
 import SocialMedia from "./common/SocialMedia.astro";
+import HtmlLogo from "./icons/logos/html.svg";
+import CssLogo from "./icons/logos/css.svg";
+import JsLogo from "./icons/logos/js.svg";
+import ReactLogo from "./icons/logos/react.svg";
+import TailwindLogo from "./icons/logos/tailwind.svg";
+import FirebaseLogo from "./icons/logos/firebase.svg";
+import AstroLogo from "./icons/logos/astro.svg";
+import BootstrapLogo from "./icons/logos/bootstrap.svg";
+import PythonLogo from "./icons/logos/python.svg";
+import JavaLogo from "./icons/logos/java.svg";
+import MySqlLogo from "./icons/logos/mysql.svg";
+import PostgresqlLogo from "./icons/logos/postgresql.svg";
+import GitLogo from "./icons/logos/git.svg";
+import NodeLogo from "./icons/logos/node.svg";
+import PhpLogo from "./icons/logos/php.svg";
+import CertificateLogo from "./icons/logos/certificate.svg";
 ---
 
 <section
@@ -57,7 +73,7 @@ import SocialMedia from "./common/SocialMedia.astro";
     </div>
   </BentoItem>
 
-  <BentoItem class="md:col-span-2" title="EDUCACIÓN 🎓">
+  <BentoItem class="md:col-span-3" title="EDUCACIÓN 🎓">
     <div slot="content" class="p-4">
       <h2 class="!text-2xl !font-bold">Tecnología en desarrollo de software</h2>
       <h3 class="!font-light">Universitaria Uniagustiniana</h3>
@@ -68,7 +84,7 @@ import SocialMedia from "./common/SocialMedia.astro";
     </div>
   </BentoItem>
 
-  <BentoItem class="md:col-span-2" title="REFERENCIA PROFESIONAL 👔">
+  <BentoItem class="md:col-span-3" title="REFERENCIA PROFESIONAL 👔">
     <div slot="content" class="p-4">
       <h2 class="!text-2xl !font-bold mb-2">ING. Mauricio Alonso Villalba</h2>
       <p class="!font-light mb-2 !text-lg">
@@ -79,22 +95,401 @@ import SocialMedia from "./common/SocialMedia.astro";
     </div>
   </BentoItem>
 
-  <BentoItem class="md:col-span-6" title="CERTIFICADOS 📝" />
+  <BentoItem class="md:col-span-4" title="CERTIFICADOS 📝">
+    <div class="grid md:grid-cols-2 m-4" slot="content">
+      <div class="col-span-1 flex justify-between">
+        <ul class="space-y-4 text-left text-slate-100 flex flex-col justify-between">
+          <li class="flex items-center space-x-3 rtl:space-x-reverse">
+            <svg
+              class="flex-shrink-0 w-3.5 h-3.5 text-slate-100"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 16 12"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 5.917 5.724 10.5 15 1.5"
+              ></path>
+            </svg>
+            <span>HTML</span>
+          </li>
+          <li class="flex items-center space-x-3 rtl:space-x-reverse">
+            <svg
+              class="flex-shrink-0 w-3.5 h-3.5 text-slate-100"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 16 12"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 5.917 5.724 10.5 15 1.5"
+              ></path>
+            </svg>
+            <span>PHP</span>
+          </li>
+          <li class="flex items-center space-x-3 rtl:space-x-reverse">
+            <svg
+              class="flex-shrink-0 w-3.5 h-3.5 text-slate-100"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 16 12"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 5.917 5.724 10.5 15 1.5"
+              ></path>
+            </svg>
+            <span>Python</span>
+          </li>
+          <li class="flex items-center space-x-3 rtl:space-x-reverse">
+            <svg
+              class="flex-shrink-0 w-3.5 h-3.5 text-slate-100"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 16 12"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 5.917 5.724 10.5 15 1.5"
+              ></path>
+            </svg>
+            <span>Web Development Fundamentals</span>
+          </li>
+          <li class="flex items-center space-x-3 rtl:space-x-reverse">
+            <svg
+              class="flex-shrink-0 w-3.5 h-3.5 text-slate-100"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 16 12"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 5.917 5.724 10.5 15 1.5"
+              ></path>
+            </svg>
+            <span>Angular</span>
+          </li>
+        </ul>
+      </div>
+      <div class="col-span-1 h-full flex flex-col justify-between">
+        <ul class="space-y-4 text-left text-slate-100 flex flex-col justify-between">
+          <li class="flex items-center space-x-3 rtl:space-x-reverse">
+            <svg
+              class="flex-shrink-0 w-3.5 h-3.5 text-slate-100"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 16 12"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 5.917 5.724 10.5 15 1.5"
+              ></path>
+            </svg>
+            <span>C++</span>
+          </li>
+          <li class="flex items-center space-x-3 rtl:space-x-reverse">
+            <svg
+              class="flex-shrink-0 w-3.5 h-3.5 text-slate-100"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 16 12"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 5.917 5.724 10.5 15 1.5"
+              ></path>
+            </svg>
+            <span>Java</span>
+          </li>
+          <li class="flex items-center space-x-3 rtl:space-x-reverse">
+            <svg
+              class="flex-shrink-0 w-3.5 h-3.5 text-slate-100"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 16 12"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 5.917 5.724 10.5 15 1.5"
+              ></path>
+            </svg>
+            <span>CCNA: Introduction to Networks</span>
+          </li>
+          <li class="flex items-center space-x-3 rtl:space-x-reverse">
+            <svg
+              class="flex-shrink-0 w-3.5 h-3.5 text-slate-100"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 16 12"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 5.917 5.724 10.5 15 1.5"
+              ></path>
+            </svg>
+            <span>Google Cloud
+              Computing Foundations</span>
+          </li>
+          <li class="flex items-center space-x-3 rtl:space-x-reverse">
+            <svg
+              class="flex-shrink-0 w-3.5 h-3.5 text-slate-100"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 16 12"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 5.917 5.724 10.5 15 1.5"
+              ></path>
+            </svg>
+            <span>CCNA: Introduction to Cybersecurity</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </BentoItem>
+  
 
   <BentoItem class="md:col-span-10" title="EXPERIENCIA 📋">
-    <Experience slot="content" title="Landing Page" date="Diciembre 2024." link="https://lilipets.vercel.app/" subtitle="LA NANA LILI P.ETS" text="Creación, desarrollo e implementación página web tipo Landing Page para una guardería de mascotas usand como tecnologias Astro, tailwind, vercel, git"></Experience>
-    <Experience slot="content" title="Aplicación web para gestión de inventario" date="Julio-Noviembre 2024." link="https://proofimaster.vercel.app/" subtitle="Empresa PROOFISILLAS LTDA" text="Creación y desarrollo aplicación web para empresa distribuidora de sillas, con módulos para productos, ventas, clientes, proveedores, con caracteristicas adicionales como historial de cambios, generación de informes, etc. Usando métodología RAD acompañada de tecnologias como React, Tailwind, Postgresql, Supabase, Vercel, Git"></Experience>
-    <Experience slot="content" title="Landing Page" date="Diciembre 2023-Enero 2024." link="https://rodriguezsas.com.co/" subtitle="Empresa RODRIGUEZ SAS" text="Creación, desarrollo e implementación página web tipo Landing Page para empresa dedicada construcción y mantenimientos usando tecnologias como PHP, MySQL, Bootstrap, JavaScript"></Experience>
-    <Experience slot="content" title="Landing Page" date="Noviembre 2023." link="https://microlanit.com.co/" subtitle="Empresa MICROLAN IT SAS" text="Creación, desarrollo e implementación página web tipo Landing page para empresa de ingenieria en hardware, software y comunicaciones, usando tecnologias como HTML, CSS, JAVASCRIPT"></Experience>
+    <Experience
+      slot="content"
+      title="Landing Page"
+      date="Diciembre 2024."
+      link="https://lilipets.vercel.app/"
+      subtitle="LA NANA LILI P.ETS"
+      text="Creación, desarrollo e implementación página web tipo Landing Page para una guardería de mascotas usand como tecnologias Astro, tailwind, vercel, git"
+    />
+    <Experience
+      slot="content"
+      title="Aplicación web para gestión de inventario"
+      date="Julio-Noviembre 2024."
+      link="https://proofimaster.vercel.app/"
+      subtitle="Empresa PROOFISILLAS LTDA"
+      text="Creación y desarrollo aplicación web para empresa distribuidora de sillas, con módulos para productos, ventas, clientes, proveedores, con caracteristicas adicionales como historial de cambios, generación de informes, etc. Usando métodología RAD acompañada de tecnologias como React, Tailwind, Postgresql, Supabase, Vercel, Git"
+    />
+    <Experience
+      slot="content"
+      title="Landing Page"
+      date="Diciembre 2023-Enero 2024."
+      link="https://rodriguezsas.com.co/"
+      subtitle="Empresa RODRIGUEZ SAS"
+      text="Creación, desarrollo e implementación página web tipo Landing Page para empresa dedicada construcción y mantenimientos usando tecnologias como PHP, MySQL, Bootstrap, JavaScript"
+    />
+    <Experience
+      slot="content"
+      title="Landing Page"
+      date="Noviembre 2023."
+      link="https://microlanit.com.co/"
+      subtitle="Empresa MICROLAN IT SAS"
+      text="Creación, desarrollo e implementación página web tipo Landing page para empresa de ingenieria en hardware, software y comunicaciones, usando tecnologias como HTML, CSS, JAVASCRIPT"
+    />
   </BentoItem>
 
-  <BentoItem class="md:col-span-5" title="TECNOLOGÍAS 🖥️" />
+  <BentoItem class="md:col-span-6" title="TECNOLOGÍAS 🖥️">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 m-4" slot="content">
+      <div class="relative group flex justify-center items-center">
+        <img
+          class="h-20 max-w-full rounded-lg"
+          src={ReactLogo.src}
+          alt="React"
+        />
+        <div
+          class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-70 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+        >
+          <span class="text-white font-semibold text-lg">React</span>
+        </div>
+      </div>
+      <div class="relative group flex justify-center items-center">
+        <img
+          class="h-20 max-w-full rounded-lg"
+          src={TailwindLogo.src}
+          alt="Tailwind CSS"
+        />
+        <div
+          class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-70 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+        >
+          <span class="text-white font-semibold text-lg">Tailwind CSS</span>
+        </div>
+      </div>
+      <div class="relative group flex justify-center items-center">
+        <img
+          class="h-20 max-w-full rounded-lg"
+          src={BootstrapLogo.src}
+          alt="Bootstrap"
+        />
+        <div
+          class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-70 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+        >
+          <span class="text-white font-semibold text-lg">Bootstrap</span>
+        </div>
+      </div>
+      <div class="relative group flex justify-center items-center">
+        <img
+          class="h-20 max-w-full rounded-lg"
+          src={FirebaseLogo.src}
+          alt="Firebase"
+        />
+        <div
+          class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-70 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+        >
+          <span class="text-white font-semibold text-lg">Firebase</span>
+        </div>
+      </div>
+      <div class="relative group flex justify-center items-center">
+        <img
+          class="h-20 max-w-full rounded-lg"
+          src={AstroLogo.src}
+          alt="Astro"
+        />
+        <div
+          class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-70 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+        >
+          <span class="text-white font-semibold text-lg">Astro</span>
+        </div>
+      </div>
+      <div class="relative group flex justify-center items-center">
+        <img
+          class="h-20 max-w-full rounded-lg"
+          src={PythonLogo.src}
+          alt="Python"
+        />
+        <div
+          class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-70 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+        >
+          <span class="text-white font-semibold text-lg">Python</span>
+        </div>
+      </div>
+      <div class="relative group flex justify-center items-center">
+        <img class="h-20 max-w-full rounded-lg" src={JavaLogo.src} alt="Java" />
+        <div
+          class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-70 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+        >
+          <span class="text-white font-semibold text-lg">Java</span>
+        </div>
+      </div>
+      <div class="relative group flex justify-center items-center">
+        <img
+          class="h-20 max-w-full rounded-lg"
+          src={MySqlLogo.src}
+          alt="MySQL"
+        />
+        <div
+          class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-70 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+        >
+          <span class="text-white font-semibold text-lg">MySQL</span>
+        </div>
+      </div>
+      <div class="relative group flex justify-center items-center">
+        <img
+          class="h-20 max-w-full rounded-lg"
+          src={PostgresqlLogo.src}
+          alt="PostgreSQL"
+        />
+        <div
+          class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-70 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+        >
+          <span class="text-white font-semibold text-lg">PostgreSQL</span>
+        </div>
+      </div>
+      <div class="relative group flex justify-center items-center">
+        <img class="h-20 max-w-full rounded-lg" src={GitLogo.src} alt="Git" />
+        <div
+          class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-70 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+        >
+          <span class="text-white font-semibold text-lg">Git</span>
+        </div>
+      </div>
+      <div class="relative group flex justify-center items-center">
+        <img
+          class="h-20 max-w-full rounded-lg"
+          src={NodeLogo.src}
+          alt="Node.js"
+        />
+        <div
+          class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-70 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+        >
+          <span class="text-white font-semibold text-lg">Node.js</span>
+        </div>
+      </div>
+      <div class="relative group flex justify-center items-center">
+        <img class="h-20 max-w-full rounded-lg" src={PhpLogo.src} alt="PHP" />
+        <div
+          class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-70 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+        >
+          <span class="text-white font-semibold text-lg">PHP</span>
+        </div>
+      </div>
+    </div>
+  </BentoItem>
 
-  <BentoItem class="md:col-span-5" title="CONTACTO 📞">
-    <SocialMedia slot="content" link="mailto:laytonjhon0@gmail.com" text="laytonjhon0@gmail.com" logo="gmail.svg"></SocialMedia>
-    <SocialMedia slot="content" link="https://github.com/JhonLayton21" text="JhonLayton21" logo="github.svg"></SocialMedia>
-    <SocialMedia slot="content" link="https://www.linkedin.com/in/jhon-layton/" text="Jhon Brandon Layton" logo="linkedin.svg"></SocialMedia>
-    <SocialMedia slot="content" link="https://wa.me/573192993229" text="+57 319 299 3229" logo="whatsapp.svg"></SocialMedia>
+  <BentoItem
+    class="md:col-span-4 flex flex-col justify-between"
+    title="CONTACTO 📞"
+  >
+    <SocialMedia
+      slot="content"
+      link="mailto:laytonjhon0@gmail.com"
+      text="laytonjhon0@gmail.com"
+      logo="gmail.svg"
+    />
+    <SocialMedia
+      slot="content"
+      link="https://github.com/JhonLayton21"
+      text="JhonLayton21"
+      logo="github.svg"
+    />
+    <SocialMedia
+      slot="content"
+      link="https://www.linkedin.com/in/jhon-layton/"
+      text="Jhon Brandon Layton"
+      logo="linkedin.svg"
+    />
+    <SocialMedia
+      slot="content"
+      link="https://wa.me/573192993229"
+      text="+57 319 299 3229"
+      logo="whatsapp.svg"
+    />
   </BentoItem>
 </section>
 
@@ -102,6 +497,7 @@ import SocialMedia from "./common/SocialMedia.astro";
   p,
   h2,
   h3,
+  li,
   button {
     font-family:
       "Outfit Variable",
@@ -125,4 +521,3 @@ import SocialMedia from "./common/SocialMedia.astro";
     font-size: 1.4rem;
   }
 </style>
-

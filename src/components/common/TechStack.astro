@@ -1,0 +1,35 @@
+---
+import HtmlLogo from "../icons/logos/html.svg";
+import CssLogo from "../icons/logos/css.svg";
+import JsLogo from "../icons/logos/js.svg";
+import ReactLogo from "../icons/logos/react.svg";
+import tailwindLogo from "../icons/logos/tailwind.svg";
+import firebaseLogo from "../icons/logos/firebase.svg";
+import astroLogo from "../icons/logos/astro.svg";
+
+const { logo } = Astro.props;
+
+const logoMap = {
+  "html.svg": HtmlLogo,
+  "css.svg": CssLogo,
+  "js.svg": JsLogo,
+  "react.svg": ReactLogo,
+  "tailwind.svg": tailwindLogo,
+  "firebase.svg": firebaseLogo,
+  "astro.svg": astroLogo,
+};
+
+const resolvedLogo = logoMap[logo] || logo;
+---
+
+<div class="grid grid-cols-3 gap-4">
+  <div>
+    <img src={resolvedLogo.src} alt="logo" class="inline-block w-7 h-7" />
+  </div>
+  <div>
+    <img src={resolvedLogo.src} alt="logo" class="inline-block w-7 h-7" />
+  </div>
+  <div>
+    <img src={resolvedLogo.src} alt="logo" class="inline-block w-7 h-7" />
+  </div>
+</div>
